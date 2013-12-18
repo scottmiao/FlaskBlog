@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>{{ article.title }}</h1>
+ 
+    <p>{{ article.created_in_words }} | {{ article.category }}</p>
+    <p>{{ article.body | safe}}</p>
+ 
+    <hr/>
+{% endblock %}    
